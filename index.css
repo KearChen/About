@@ -1,0 +1,570 @@
+/* @font-face {
+  font-family: "yayuan";
+  src: url("fontenw3.ttf");
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji,BlinkMacSystemFont,Helvetica Neue,Arial,PingFang SC,PingFang TC,PingFang HK,Microsoft Yahei,Microsoft JhengHei";
+}
+img {
+  width: 100%;
+}
+i {
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji,BlinkMacSystemFont,Helvetica Neue,Arial,PingFang SC,PingFang TC,PingFang HK,Microsoft Yahei,Microsoft JhengHei" !important;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3%;
+}
+.left {
+  width: 25%;
+  height: 44.7vw;
+  background-color: #ffffff66;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
+}
+.avatar {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+  width: 75%;
+  /* background-color: #ffffff9f;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* padding: 20px; */
+}
+.right-bottom-project,
+.right-top-bottom,
+.right-top_right,
+.right-top_left {
+  background-color: #ffffff66;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.right-top_right,
+.right-top_left {
+  height: 12vw;
+}
+.info {
+  padding : 20px;
+}
+.info h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 1.7vw;
+  color: #fff;
+}
+.info i {
+  color: #fff;
+  font-size: 1.2vw;
+}
+.info p {
+  color: #fff;
+  font-size: 1vw;
+  /* margin-top: 10px; */
+}
+.info ul li {
+  color: #fff;
+  font-size: 0.7vw;
+  margin: 10px 0;
+}
+.text_center {
+  width: 100% !important;
+  text-align: center;
+}
+.felx_allign_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill li p {
+  text-align: center;
+}
+.margin_top_5 {
+  margin-top: 5px;
+}
+.margin_top_10 {
+  margin-top: 10px;
+}
+.margin_top_20 {
+  margin-top: 20px;
+}
+.margin_top_30 {
+  margin-top: 30px;
+}
+
+.php_icon::before,
+.html_icon::before,
+.go_icon::before,
+.mysql_icon::before,
+.javascript_icon::before,
+.docker_icon::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+}
+.php_icon::before {
+  background-color: #4f5d95;
+}
+.html_icon::before {
+  background-color: #e34f26;
+}
+.go_icon::before {
+  background-color: #00a6ed;
+}
+.mysql_icon::before {
+  background-color: #00758f;
+}
+.javascript_icon::before {
+  background-color: #f7df1e;
+}
+.docker_icon::before {
+  background-color: #2496ed;
+}
+.projectExperience {
+  width: 100%;
+}
+.right-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+}
+.prize h1,
+.right-bottom-project h1,
+.right-top-bottom h1,
+.education h1,
+.projectExperience h1 {
+  font-size: 24px;
+  margin-bottom: 1%;
+}
+.line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line p {
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px;
+  text-align: center;
+  text-shadow: 0 0 5px #7b7b7b;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  font-size: 0.85vw;
+}
+.right-top_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right-top_left {
+  width: 40%;
+}
+.right-top_right {
+  width: 59%;
+}
+
+.education_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.education_schoolBadge {
+  width: 35%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.education_schoolBadge img {
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  object-fit: cover;
+}
+.education_schoolInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.education_schoolInfo p {
+  font-size: 14px;
+  /* line-height: 1.5; */
+  /* 显示1行 */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prize table {
+  border-collapse: collapse;
+  /* margin-top: -20px; */
+}
+.prize table tr {
+  border-bottom: 2px solid #fff;
+}
+.prize table tr td {
+  padding: 2% 1%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8vw;
+}
+.prize table tr td:first-child {
+  width: 1%;
+}
+
+.right-top-bottom {
+  margin-top: 10px;
+  color: #fff;
+  height: 16vw;
+}
+.right-top-bottom table {
+  width: 99%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.right-top-bottom table tr th:nth-child(1),
+.right-top-bottom table tr td:nth-child(1) {
+  text-align: left;
+}
+.right-top-bottom table tr td {
+  padding: 5px 0px;
+  /* height: 70px; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8vw;
+}
+.right-bottom-project {
+  margin-top: 10px;
+  height: 15.5vw;
+}
+.right-bottom-project ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-bottom-project ul li {
+  width: calc(100% / 4 - 10px);
+}
+
+.right-bottom-project ul li a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.right-bottom-project ul li a img {
+  /* width: 80%; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* 圆角 */
+  border-radius: 10px;
+  /* 阴影 */
+  box-shadow: 0 0 10px #00000043;
+}
+
+.developmentLanguage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-bottom-project ul li a p {
+  /* 显示1行 */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.education_line {
+  display: flex;
+}
+.right-bottom-project h1 {
+  color: white;
+}
+
+@media (max-width: 1800px) {
+  .skill p {
+    display: none;
+  }
+}
+@media (max-width: 1665px) {
+  .left {
+    height: 45.7vw;
+  }
+  .right-bottom-project {
+    margin-top: 10px;
+    height: 16.5vw;
+  }
+  .skill img {
+    display: none;
+  }
+  .skill p {
+    display: block;
+  }
+  .info p {
+    margin-bottom: 10px !important;
+  }
+  .container {
+    width: 90%;
+  }
+  .prize h1,
+  .right-bottom-project h1,
+  .right-top-bottom h1,
+  .education h1,
+  .projectExperience h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1563px) {
+  .right-top_right,
+  .right-top_left {
+    height: 16vw;
+  }
+  .right-top-bottom {
+    margin-top: 10px;
+    color: #fff;
+    height: 18vw;
+  }
+  .right-bottom-project {
+    margin-top: 10px;
+    height: 19.5vw;
+  }
+  .left {
+    height: 55.2vw;
+  }
+  .prize table tr td {
+    padding: 4% 1%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info {
+    width: 65%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .avatar {
+    width: 30%;
+    height: 300px;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    height: auto;
+    flex-direction: row;
+    padding: 0;
+  }
+  .info h1 {
+    font-size: 24px;
+  }
+  .info p {
+    font-size: 16px;
+    margin-bottom: 0px !important;
+  }
+  .info i {
+    font-size: 16px;
+  }
+  .info ul li {
+    font-size: 15px;
+  }
+  .skill img {
+    display: block;
+    width: 70%;
+  }
+  .right {
+    margin-top: 10px;
+  }
+  .right-top {
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-top_right,
+  .right-top_left,
+  .right-top-bottom,
+  .right-bottom-project {
+    width: 100%;
+    height: 100%;
+  }
+  .right-bottom-project h1,
+  .prize h1,
+  .right-top-bottom h1,
+  .education h1,
+  .projectExperience h1 {
+    font-size: 18px;
+  }
+  .line p {
+    font-size: 12px;
+  }
+  .education_schoolInfo p {
+    font-size: 12px;
+  }
+  .right-top_left,
+  .right-top_right {
+    width: 100%;
+  }
+  .prize table tr td {
+    font-size: 12px;
+  }
+  .prize table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .prize table tr td {
+    /* white-space: normal; */
+  }
+  .prize table tr td:first-child {
+    width: 30%;
+  }
+  .right-top_right {
+    margin-top: 10px;
+  }
+  .right-top-bottom table tr td {
+    font-size: 14px;
+  }
+  .right-top-bottom table tr td {
+    white-space: normal;
+  }
+  .right-top-bottom table tr th:nth-child(1),
+  .right-top-bottom table tr td:nth-child(1) {
+    width: 40%;
+  }
+  .right-bottom-project ul li {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 10px;
+  }
+  .right-bottom-project ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .left {
+    flex-direction: column;
+  }
+  .avatar {
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    /* 圆角 */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .avatar img {
+    object-fit: cover;
+  }
+  .info {
+    width: 100%;
+  }
+  .education_line {
+    flex-direction: column;
+  }
+  .education_schoolBadge {
+    width: 20%;
+  }
+  .prize table tr td {
+    white-space: normal;
+  }
+  .right-top-bottom table tr td:nth-child(1) {
+    width: 92%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    /* 行高 */
+    line-height: 2;
+  }
+  .right-bottom-project ul li {
+    width: 100%;
+  }
+  .info p {
+    margin-top: 5px;
+    margin-bottom: 10px !important;
+  }
+}
